@@ -6,10 +6,37 @@
 </head>
 <body>
     <header>videojuegos</header>
+    <div class="enlaces">
     <a href="index.html">Inicio</a>
     <a href="pagina1.html">tabla</a>
     <a href="pagina2.html">formulario</a>
     <a href="pagina3.html">consola</a>
+    </div>
+
+    <form action="#">
+        <label>Nombre:</label>
+        <input type="text" name="nombre"><br><br>
+
+        <label>Apellidos:</label>
+        <input type="text" name="apellidos"><br><br>
+
+        <label>Edad:</label>
+        <input type="number" name="edad" min="0" max="99"><br><br>
+
+        <label>Genero:</label><br>
+        <input type="radio" name="genero" value="hombre">hombre<br>
+        <input type="radio" name="genero" value="mujer">mujer<br>
+        <input type="radio" name="genero" value="prefiero no decrilo">prefiero no decirlo<br><br>
+
+
+
+
+
+
+
+
+
+    </form>
     
 </body>
 <style>
@@ -17,6 +44,16 @@
     header{
         font-family: "Jersey 10", sans-serif;
         text-align: center;
+        font-size: 60px;
+        background-color: aqua;
+    }
+    .enlaces{
+        text-align: center;
+        padding: 20px;
+        font-size: 25px;
+    }
+    form{
+        border-radius: 18px;
     }
 </style>
 </html>
