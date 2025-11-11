@@ -8,7 +8,7 @@
     <header>videojuegos</header>
     <div class="enlaces">
     <a href="index.html">Inicio</a>
-    <a href="pagina1.html">tabla</a>
+    <a href="pagina1.html">Ranking</a>
     <a href="pagina2.html">formulario</a>
     <a href="pagina3.html">consola</a>
     </div>
@@ -17,27 +17,27 @@
     <li>Una tabla con los 5 juegos mas vendidos de la historia en la pagina "tabla"</li>
     <li>Un formulario para saber que tipo videojuegos te gustan en "formulario"</li>
 
-    <h1 style="color: red;">Nintendo</h1>
-    <div class="video">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/db4Hjviqktc?si=cIbIwYdKBUIgOc7O" title="YouTube video player" 
-    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </div>
+    <section class="contenedor">
+        <div class="caja">
+            <h2>Ranking</h2>
+            <a href="pagina1.html">
+                <img src="img/tabla-de-datos.png" alt="tabla">
+            </a>
+        </div>
+        <div class="caja">
+            <h2>formulario</h2>
+            <a href="pagina2.html">
+                <img src="img/formulario-de-contacto.png" alt="formulario">
+            </a>
+        </div>
+        <div class="caja">
+            <h2>historia</h2>
+            <a href="pagina3.html">
+                <img src="img/videogames.png" alt="consola">
+            </a>
+        </div>
 
-    <h1 style="color: blue;">Playstation</h1>
-    <div class="video">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/4Chy1qf9nsw?si=bEOSUv60QdHm-4Qk" title="YouTube video player" 
-    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </div>
-
-    <h1 style="color: green;">Microsoft/Xbox</h1>
-    <div class="video">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/W0A1jfg6q3I?si=XmF-S-9mvgmp2AdR" title="YouTube video player" 
-    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </div>
-
+    </section>
 </body>
 <footer>Gabriel Gutierrez Castro. All rights reserved©️</footer>
 <style>
@@ -59,7 +59,7 @@
     body{
         margin: 0;
         padding: o;
-        background-color: purple;
+        background-color: #2b0057;
 
     }
     .enlaces{
@@ -70,13 +70,39 @@
         background-color: black;
         color: aqua;
     }
-    h1{
-        font-family: "Jersey 10", sans-serif;
-        text-align: center;
-        font-size: 40px;
+    p, li {
+    font-family: "Jersey 10", sans-serif;
+    font-size: 25px;
+    color: aqua; 
+    text-align: center;
+    list-style: none; 
+    margin: 10px 0;
+}
+    .contenedor{
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        padding: 20px;
     }
-    .video{
+    .caja{
+        width: 600px;
+        height: 350px;
+        border: 2px solid #000;
+        border-radius: 30px;
         text-align: center;
+        padding: 30px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        background: linear-gradient(135deg, #5a00ff, #00bfff);;
+    }
+    .caja img{
+        width: 300px;
+        height: 300px;
+        margin-top: 5px;
+    }
+    .caja h2{
+        font-family: "Jersey 10", sans-serif;
+        font-size: 40px;
+        margin-bottom: 5px;
     }
     footer{
         font-family: "Jersey 10", sans-serif;
