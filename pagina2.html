@@ -42,6 +42,28 @@
             </select></td>
             <td><label>¿Cuantas horas juegas?</label></td>
             <td><input type="number" name="horas" min="0" max="168"></td>
+            <td><select>
+                <option selected disabled value="">¿Como prefieres jugar?</option>
+                <option value="amigos">Con amigos</option>
+                <option value="solo">Solo</option>
+            </select></td>
+        </tr>
+        <tr>
+            <td><label>¿Que personaje te gustaria ser?</label></td>
+            <td><input type="text" name="personaje"></td>
+            <td><select>
+                <option selected disabled value="">¿Que graficos prefieres?</option>
+                <option value="Realistas">Realistas</option>
+                <option value="PixelArt">PixelArt</option>
+            </select></td>
+            <td><select>
+                <option selected disabled value="">¿Nivel de juego?</option>
+                <option value="Pricipiante">Pricipiante</option>
+                <option value="Intermedio">Intermedio</option>
+                <option value="Intermedio">Experto</option>
+                <option value="Leyenda">Leyenda</option>
+            </select></td>
+
         </tr>
         </table>
         <button>enviar</button>
@@ -79,13 +101,21 @@
     }
     table{
         font-family:"Jersey 10", sans-serif;
-        align-content: center;
-        border: 1px solid black;
+        border: 1px solid aqua;
+        margin: 0 auto;
+        text-align: center;
         padding: 10px;
+        font-size: 25px;
+        background-color: #1a0033;
+        color: aqua;
     }
     button{
-        color: blue;
-        background-color: yellow;
+        font-family:"Jersey 10", sans-serif;
+        display: block;
+        margin: 20px auto;
+        font-size: 25px;
+        color: aqua;
+        background-color: #1a0033;
     }
     footer{
         font-family: "Jersey 10", sans-serif;
