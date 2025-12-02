@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
     <meta charset="UTF-8" />
     <title>🕹️Videojuegos🕹️</title>
     <link rel="icon" href="img/forma-alienigena-pixelada-de-un-juego-digital.png" type="img/html">
     <style>
 @import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+
 /* ====== General ====== */
 body {
     margin: 0;
@@ -43,29 +44,6 @@ header {
 .enlaces a:hover {
     color: #ff0;
     transform: scale(1.1);
-}
-
-/* ====== Tabla ====== */
-.table-container {
-    width: 90%;
-    margin: 30px auto;
-    overflow-x: auto;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    font-family: "Jersey 10", sans-serif;
-    font-size: 22px;
-    background-color: #1a0033;
-    color: aqua;
-    box-shadow: 0 0 15px aqua;
-}
-
-th, td {
-    border: 2px solid aqua;
-    padding: 10px 15px;
-    border-radius: 10px;
 }
 
 /* ====== Formulario ====== */
@@ -137,28 +115,44 @@ footer {
 </style>
 </head>
 <body>
-    <header>videojuegos</header>
+    <header>Formulario Gamer</header>
+
     <div class="enlaces">
-    <a href="index.html">Inicio</a>
-    <a href="pagina1.html">Ranking</a>
-    <a href="pagina2.html">formulario</a>
-    <a href="pagina3.html">consola</a>
+        <a href="index.html">Inicio</a>
+        <a href="pagina1.html">Ranking</a>
+        <a href="pagina2.html">Formulario</a>
+        <a href="pagina3.html">Consola</a>
+        <a href="mailto:ejemplo@correo.com">Contacto</a>
     </div>
+
     <form action="#">
+
     <!-- Nombre, Apellidos y Edad -->
     <div class="form-group">
         <label>Nombre:</label>
-        <input type="text" name="nombre">
+        <input type="text" name="nombre" placeholder="Tu nombre" required>
     </div>
 
     <div class="form-group">
         <label>Apellidos:</label>
-        <input type="text" name="apellidos">
+        <input type="text" name="apellidos" placeholder="Tus apellidos" required>
     </div>
 
     <div class="form-group">
         <label>Edad:</label>
-        <input type="number" name="edad" min="0" max="99">
+        <input type="number" name="edad" min="0" max="99" required>
+    </div>
+
+    <!-- Password obligatorio -->
+    <div class="form-group">
+        <label>Contraseña (para registrar encuesta):</label>
+        <input type="password" name="password" placeholder="Crea una contraseña" required>
+    </div>
+
+    <!-- Fecha (input date) -->
+    <div class="form-group">
+        <label>¿En qué fecha rellenaste este formulario?</label>
+        <input type="date" name="fecha" required>
     </div>
 
     <!-- Género -->
@@ -169,15 +163,24 @@ footer {
         <input type="radio" name="genero" value="prefiero no decirlo"> Prefiero no decirlo
     </div>
 
+    <!-- Checkbox obligatorio -->
+    <div class="form-group">
+        <label>¿Qué géneros sueles jugar? (Puedes elegir varios)</label>
+        <input type="checkbox" name="checkbox_accion"> Acción
+        <input type="checkbox" name="checkbox_aventura"> Aventura
+        <input type="checkbox" name="checkbox_rpg"> RPG
+        <input type="checkbox" name="checkbox_deportes"> Deportes
+    </div>
+
     <!-- Apodo y Plataforma -->
     <div class="form-group">
         <label>Apodo gamer:</label>
-        <input type="text" name="apodo">
+        <input type="text" name="apodo" placeholder="Tu nombre en los juegos" required>
     </div>
 
     <div class="form-group">
         <label>¿En qué plataforma juegas?</label>
-        <select name="plataforma">
+        <select name="plataforma" required>
             <option selected disabled value="">Selecciona</option>
             <option value="Play">Playstation</option>
             <option value="Xbox">Xbox</option>
@@ -190,12 +193,12 @@ footer {
     <!-- Horas y Preferencia -->
     <div class="form-group">
         <label>¿Cuántas horas juegas?</label>
-        <input type="number" name="horas" min="0" max="168">
+        <input type="number" name="horas" min="0" max="168" required>
     </div>
 
     <div class="form-group">
         <label>¿Cómo prefieres jugar?</label>
-        <select name="prefiere_jugar">
+        <select name="prefiere_jugar" required>
             <option selected disabled value="">Selecciona</option>
             <option value="amigos">Con amigos</option>
             <option value="solo">Solo</option>
@@ -210,7 +213,7 @@ footer {
 
     <div class="form-group">
         <label>¿Qué gráficos prefieres?</label>
-        <select name="graficos">
+        <select name="graficos" required>
             <option selected disabled value="">Selecciona</option>
             <option value="Realistas">Realistas</option>
             <option value="PixelArt">PixelArt</option>
@@ -219,7 +222,7 @@ footer {
 
     <div class="form-group">
         <label>Nivel de juego:</label>
-        <select name="nivel">
+        <select name="nivel" required>
             <option selected disabled value="">Selecciona</option>
             <option value="Principiante">Principiante</option>
             <option value="Intermedio">Intermedio</option>
@@ -228,29 +231,15 @@ footer {
         </select>
     </div>
 
-    <!-- Género favorito y Top 3 juegos -->
-    <div class="form-group">
-        <label>Género de juego favorito:</label>
-        <select name="genero_fav">
-            <option selected disabled value="">Selecciona</option>
-            <option value="Accion">Acción</option>
-            <option value="Aventura">Aventura</option>
-            <option value="Estrategia">Estrategia</option>
-            <option value="RPG">RPG</option>
-            <option value="Deportes">Deportes</option>
-            <option value="Simulacion">Simulación</option>
-            <option value="Puzzle">Puzzle</option>
-        </select>
-    </div>
-
+    <!-- Top 3 -->
     <div class="form-group">
         <label>Top 3 juegos favoritos:</label>
-        <input type="text" name="top1" placeholder="Juego 1">
-        <input type="text" name="top2" placeholder="Juego 2">
-        <input type="text" name="top3" placeholder="Juego 3">
+        <input type="text" name="top1" placeholder="Juego 1" required>
+        <input type="text" name="top2" placeholder="Juego 2" required>
+        <input type="text" name="top3" placeholder="Juego 3" required>
     </div>
 
-    <!-- Plataforma secundaria y personaje favorito -->
+    <!-- Plataforma secundaria -->
     <div class="form-group">
         <label>Plataforma secundaria:</label>
         <select name="plataforma2">
@@ -263,12 +252,13 @@ footer {
         </select>
     </div>
 
+    <!-- Personaje -->
     <div class="form-group">
         <label>Personaje favorito:</label>
         <input type="text" name="personajeFav">
     </div>
 
-    <!-- Habilidad y boss -->
+    <!-- Habilidad y Boss -->
     <div class="form-group">
         <label>Habilidad especial favorita:</label>
         <input type="text" name="habilidad">
@@ -279,16 +269,17 @@ footer {
         <input type="text" name="boss">
     </div>
 
-    <!-- Preferencias y comentarios -->
+    <!-- Preferencias -->
     <div class="form-group">
         <label>Prefieres:</label>
         <input type="radio" name="prefiere" value="multijugador"> Multijugador
         <input type="radio" name="prefiere" value="historia"> Historia
     </div>
 
+    <!-- Comentarios -->
     <div class="form-group">
         <label>Comentarios / sugerencias:</label>
-        <textarea name="comentarios" rows="3"></textarea>
+        <textarea name="comentarios" rows="3" placeholder="Escribe aquí"></textarea>
     </div>
 
     <!-- Botón enviar -->
@@ -296,6 +287,6 @@ footer {
     <button type="reset">Reiniciar</button>
 </form>
 
-    <footer>Gabriel Gutierrez Castro. All rights reserved©️</footer>
+<footer>Gabriel Gutierrez Castro. All rights reserved ©️</footer>
 </body>
 </html>

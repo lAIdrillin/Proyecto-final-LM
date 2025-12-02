@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
     <meta charset="UTF-8" />
     <title>🕹️Videojuegos🕹️</title>
@@ -48,7 +48,7 @@
             transform: scale(1.1);
         }
 
-        /* Títulos de consolas */
+        /* Títulos */
         h2 {
             font-family: "Jersey 10", sans-serif;
             text-align: center;
@@ -58,19 +58,30 @@
         h2.nintendo { color: #ff4d4d; }
         h2.playstation { color: #4d79ff; }
         h2.xbox { color: #4dff4d; }
+        h2.multimedia { color: aqua; }
 
         /* Videos */
-        .video {
+        .video, .media {
             display: flex;
             justify-content: center;
             margin: 20px 0;
         }
-        .video iframe {
+        iframe, video, audio {
+            box-shadow: 0 0 20px aqua;
+            border-radius: 10px;
+        }
+        iframe {
             width: 80%;
             max-width: 560px;
             height: 315px;
-            border-radius: 10px;
-            box-shadow: 0 0 20px aqua;
+        }
+        video {
+            width: 80%;
+            max-width: 600px;
+        }
+        audio {
+            width: 80%;
+            max-width: 500px;
         }
 
         /* Footer */
@@ -87,15 +98,17 @@
     </style>
 </head>
 <body>
-    <header>Videojuegos</header>
+    <header>Historia de las Consolas</header>
 
     <div class="enlaces">
         <a href="index.html">Inicio</a>
         <a href="pagina1.html">Ranking</a>
         <a href="pagina2.html">Formulario</a>
         <a href="pagina3.html">Consola</a>
+        <a href="mailto:ejemplo@correo.com">Contacto</a>
     </div>
 
+    <!-- VIDEOS DE YOUTUBE -->
     <h2 class="nintendo">Nintendo</h2>
     <div class="video">
         <iframe src="https://www.youtube.com/embed/db4Hjviqktc?si=cIbIwYdKBUIgOc7O"
@@ -122,6 +135,27 @@
                 allowfullscreen>
         </iframe>
     </div>
-    <footer>Gabriel Gutierrez Castro. All rights reserved©️</footer>
+
+    <!-- MULTIMEDIA OBLIGATORIO -->
+    <h2 class="multimedia">Contenido Multimedia Obligatorio</h2>
+
+    <!-- VIDEO HTML5 -->
+    <div class="media">
+        <video controls>
+            <source src="media/video.mp4" type="video/mp4">
+            Tu navegador no soporta el vídeo HTML5.
+        </video>
+    </div>
+
+    <!-- AUDIO HTML5 -->
+    <div class="media">
+        <audio controls>
+            <source src="media/audio.mp3" type="audio/mpeg">
+            Tu navegador no soporta el audio HTML5.
+        </audio>
+    </div>
+
+    <footer>Gabriel Gutierrez Castro. All rights reserved ©️</footer>
 </body>
 </html>
+

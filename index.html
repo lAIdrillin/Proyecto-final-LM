@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
     <meta charset="UTF-8" />
     <title>🕹️Videojuegos🕹️</title>
@@ -13,8 +13,6 @@
         width: 100%;
         margin: 0;
         padding:0;
-        box-sizing: border-box;
-        display: block;
         background-size: cover;
         background-position: center;
         background: url(img/1.webp);
@@ -22,13 +20,12 @@
     }
     body{
         margin: 0;
-        padding: o;
+        padding: 0;
         background-color: #2b0057;
-
     }
-    h1{
+    h1, p, li {
         font-family: "Jersey 10", sans-serif;
-        font-size: 60px;
+        font-size: 25px;
         color: aqua;
         text-align: center;
         list-style: none;
@@ -50,15 +47,7 @@
     .enlaces a:hover {
         color: #ff0;
         transform: scale(1.1);
-        }
-    p, li {
-    font-family: "Jersey 10", sans-serif;
-    font-size: 25px;
-    color: aqua;
-    text-align: center;
-    list-style: none;
-    margin: 10px 0;
-}
+    }
     .contenedor{
         display: flex;
         justify-content: center;
@@ -72,8 +61,7 @@
         border-radius: 30px;
         text-align: center;
         padding: 30px;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        background: linear-gradient(135deg, #5a00ff, #00bfff);;
+        background: linear-gradient(135deg, #5a00ff, #00bfff);
     }
     .caja img{
         width: 300px;
@@ -96,17 +84,34 @@
 </head>
 <body>
     <header>videojuegos</header>
+
     <div class="enlaces">
-    <a href="index.html">Inicio</a>
-    <a href="pagina1.html">Ranking</a>
-    <a href="pagina2.html">formulario</a>
-    <a href="pagina3.html">consola</a>
+        <a href="index.html">Inicio</a>
+        <a href="pagina1.html">Ranking</a>
+        <a href="pagina2.html">Formulario</a>
+        <a href="pagina3.html">Consola</a>
+        <a href="mailto:ejemplo@correo.com">Contacto</a>
     </div>
+
     <h1>¡¡¡ Bienvenid@ !!!</h1>
-    <p>En esta Web veremos las siguientes cosas: </p>
-    <li>Un Ranking con los 5 juegos mas vendidos de la historia.</li>
-    <li>Un formulario para saber que tipo videojuegos te gustan.</li>
-    <li>Una pagina con un par de videos que resmuen la historia de Nintendo, Playstation y Microsoft/Xbox</li>
+
+    <p>En esta Web veremos las siguientes cosas, <b>todas relacionadas</b> con el mundo de los videojuegos:</p>
+
+    <!-- Lista ordenada obligatoria -->
+    <ol style="text-align:center; color:aqua; font-family:'Jersey 10', sans-serif;">
+        <li>Un <u>Ranking</u> con los 5 juegos más vendidos.</li>
+        <li>Un formulario sobre tus gustos gamer.</li>
+        <li>Una página con vídeos sobre la historia de <i>Nintendo</i>, <i>Playstation</i> y <i>Xbox</i>.</li>
+    </ol>
+
+    <!-- Lista descriptiva obligatoria -->
+    <dl style="color:aqua; text-align:center; font-family:'Jersey 10'; font-size:25px;">
+        <dt><b>Gamer</b></dt>
+        <dd>Persona que disfruta de los videojuegos.</dd>
+
+        <dt><b>Consola</b></dt>
+        <dd>Dispositivo diseñado para jugar videojuegos. Ej: PS5, Xbox, Nintendo Switch.</dd>
+    </dl>
 
     <section class="contenedor">
         <div class="caja">
@@ -116,19 +121,18 @@
             </a>
         </div>
         <div class="caja">
-            <h2>formulario</h2>
+            <h2>Formulario</h2>
             <a href="pagina2.html">
                 <img src="img/formulario-de-contacto.png" alt="formulario">
             </a>
         </div>
         <div class="caja">
-            <h2>historia</h2>
+            <h2>Historia</h2>
             <a href="pagina3.html">
                 <img src="img/videogames.png" alt="consola">
             </a>
         </div>
-
     </section>
 </body>
-<footer>Gabriel Gutierrez Castro. All rights reserved©️</footer>
+<footer>Gabriel Gutierrez Castro. All rights reserved ©️</footer>
 </html>

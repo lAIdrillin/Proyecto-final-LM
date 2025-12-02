@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
     <meta charset="UTF-8" />
     <title>🕹️Videojuegos🕹️</title>
     <link rel="icon" href="img/forma-alienigena-pixelada-de-un-juego-digital.png" type="img/html">
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+    
     header{
         font-family:"Jersey 10", sans-serif;
         text-align: center;
@@ -22,8 +23,7 @@
     body{
         margin: 0;
         padding: 0;
-        background-color: #2b0057
-
+        background-color: #2b0057;
     }
     .enlaces {
         font-family: "Jersey 10", sans-serif;
@@ -31,17 +31,17 @@
         padding: 20px;
         font-size: 25px;
         background-color: black;
-        }
+    }
     .enlaces a {
         color: aqua;
         margin: 0 15px;
         text-decoration: none;
         transition: all 0.3s;
-        }
+    }
     .enlaces a:hover {
         color: #ff0;
         transform: scale(1.1);
-        }
+    }
     table{
         font-family:"Jersey 10", sans-serif;
         font-size: 22px;
@@ -51,6 +51,7 @@
         border-collapse: collapse;
         background-color: #1a0033;
         box-shadow: 0 0 20px aqua;
+        width: 90%;
     }
     th, td{
         border: 2px solid aqua;
@@ -60,117 +61,141 @@
         background-color: #330066;
         color: #00ffff;
     }
+    caption{
+        font-size: 30px;
+        padding: 10px;
+        color: aqua;
+        caption-side: top;
+    }
+    tfoot td{
+        background-color: #330066;
+        color: aqua;
+        font-size: 22px;
+        padding: 15px;
+    }
     footer{
         font-family: "Jersey 10", sans-serif;
         font-size: 20px;
         text-align: center;
         color: aqua;
         background-color: black;
+        padding: 15px 0;
     }
 </style>
 </head>
 <body>
     <header>videojuegos</header>
+
     <div class="enlaces">
-    <a href="index.html">Inicio</a>
-    <a href="pagina1.html">Ranking</a>
-    <a href="pagina2.html">formulario</a>
-    <a href="pagina3.html">consola</a>
+        <a href="index.html">Inicio</a>
+        <a href="pagina1.html">Ranking</a>
+        <a href="pagina2.html">Formulario</a>
+        <a href="pagina3.html">Consola</a>
+        <a href="mailto:ejemplo@correo.com">Contacto</a>
     </div>
+
     <table>
-        <tr>
-            <th colspan="6" style="text-align:center; font-size:28px;">juegos mas vendidos de la historia</th>
-        </tr>
-        <tr>
-            <th>foto</th>
-            <th>nombre</th>
-            <th>Desarrollador</th>
-            <th>fecha de salida</th>
-            <th>ventas</th>
-            <th>descripcion</th>
-        </tr>
-        <tr>
-            <th>
-            <a href="https://es.wikipedia.org/wiki/Minecraft">
-            <img src="img/minecraft.avif" width="100" height="100" alt="minecraft">
-            </a>
-            </th>
-            <th>minecraft</th>
-            <th>
-                <a href="https://www.minecraft.net/es-es">Mojang Studios</a>
-            </th>
-            <th>18 de noviembre de 2011</th>
-            <th>350 millones</th>
-            <th>Juego de bloques en el que el unico limite es tu imaginacion</th>
-        </tr>
-        <tr>
-            <th>
-            <a href="https://es.wikipedia.org/wiki/Grand_Theft_Auto_V">
-            <img src="img/GTAV.webp" width="100" height="100" alt="GTAV">
-            </a>
-            </th>
-            <th>Grand Theft Auto V</th>
-            <th>
-                <a href="https://www.rockstarnorth.com">Rockstar North</a>
-            </th>
-            <th>17 de septiembre de 2013</th>
-            <th>215 millones</th>
-            <th>GTA V es un juego de acción y mundo abierto donde controlas a tres criminales<br> 
-            (Michael, Franklin y Trevor) que realizan misiones y robos en la ciudad ficticia de Los Santos,<br>  
-            mientras exploras libremente, conduces, luchas y vives distintas aventuras.</th>
-        </tr>
-        <tr>
-            <th>
-            <a href="https://es.wikipedia.org/wiki/Tetris">
-            <img src="img/tetris.png" width="100" height="100" alt="tetris">
-            </a>
-            </th>
-            <th>tetris</th>
-            <th>
-                <a href="https://www.ea.com/es-es">EA mobile</a>
-            </th>
-            <th>12 de septiembre de 2006</th>
-            <th>132 millones</th>
-            <th>Tetris es un juego de puzles en el que debes encajar piezas de distintas formas que caen desde la parte superior,<br> 
-            formando líneas completas para eliminarlas y evitar que se acumule hasta llenar la pantalla.</th>
-        </tr>
-        <tr>
-            <th>
-            <a href="https://es.wikipedia.org/wiki/Wii_Sports">
-            <img src="img/WIIsports.jpg" width="100" height="100" alt="WIIsports">
-            </a>
-            </th>
-            <th>Wii Sports</th>
-            <th>
-                <a href="https://www.nintendo.com/es-es/?srsltid=AfmBOorN5UsMeqFSlQe5ngJyCbAgrHJ7JcfV1eNzXXktvptvw5STV44T">Nintendo EAD</a>
-            </th>
-            <th>19 de noviembre de 2006</th>
-            <th>82.90 millones</th>
-            <th>Wii Sports es un juego deportivo que usa los mandos de movimiento de la Wii para simular deportes como<br>
-            tenis, bolos, béisbol, golf y boxeo, permitiendo jugar moviéndote como en la vida real.</th>
-        </tr>
-        <tr>
-            <th>
-            <a href="https://es.wikipedia.org/wiki/Red_Dead_Redemption_2">
-            <img src="img/rdr2.webp" width="100" height="100" alt="rdr2">
-            </a>
-            </th>
-            <th>Red Dead Redemption 2</th>
-            <th>
-                <a href="https://www.rockstargames.com/es">Rockstar Studios</a>
-            </th>
-            <th>26 de octubre de 2018</th>
-            <th>79 millones</th>
-            <th>Red Dead Redemption 2 es un juego de acción y aventura ambientado en el Viejo Oeste, donde encarnas a<br>
-            Arthur Morgan, un forajido que lucha por sobrevivir y mantenerse fiel a su banda mientras el mundo del<br>
-            crimen se desvanece.</th>
-        </tr>
-        <tr>
-            <th colspan="6" style="text-align:center; font-size:28px;">
-                Para ver mas juegos pncha<a href="https://www.youtube.com/watch?v=xvFZjo5PgG0">aqui</a>
-            </th>
-        </tr>
+        <caption>Juegos más vendidos de la historia</caption>
+
+        <thead>
+            <tr>
+                <th>Foto</th>
+                <th>Nombre</th>
+                <th>Desarrollador</th>
+                <th>Fecha de salida</th>
+                <th>Ventas</th>
+                <th>Descripción</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>
+                    <a href="https://es.wikipedia.org/wiki/Minecraft">
+                        <img src="img/minecraft.avif" width="100" height="100" alt="minecraft">
+                    </a>
+                </td>
+                <td>Minecraft</td>
+                <td>
+                    <a href="https://www.minecraft.net/es-es">Mojang Studios</a>
+                </td>
+                <td>18 de noviembre de 2011</td>
+                <td>350&nbsp;millones</td>
+                <td>Juego de bloques donde el límite es tu imaginación.</td>
+            </tr>
+
+            <tr>
+                <td>
+                    <a href="https://es.wikipedia.org/wiki/Grand_Theft_Auto_V">
+                        <img src="img/GTAV.webp" width="100" height="100" alt="GTAV">
+                    </a>
+                </td>
+                <td>Grand Theft Auto V</td>
+                <td>
+                    <a href="https://www.rockstarnorth.com">Rockstar North</a>
+                </td>
+                <td>17 de septiembre de 2013</td>
+                <td>215&nbsp;millones</td>
+                <td>Juego de mundo abierto con tres protagonistas y cientos de misiones.</td>
+            </tr>
+
+            <tr>
+                <td>
+                    <a href="https://es.wikipedia.org/wiki/Tetris">
+                        <img src="img/tetris.png" width="100" height="100" alt="tetris">
+                    </a>
+                </td>
+                <td>Tetris</td>
+                <td>
+                    <a href="https://www.ea.com/es-es">EA Mobile</a>
+                </td>
+                <td>12 de septiembre de 2006</td>
+                <td>132&nbsp;millones</td>
+                <td>Juego de puzles donde debes encajar piezas que caen desde arriba.</td>
+            </tr>
+
+            <tr>
+                <td>
+                    <a href="https://es.wikipedia.org/wiki/Wii_Sports">
+                        <img src="img/WIIsports.jpg" width="100" height="100" alt="WIIsports">
+                    </a>
+                </td>
+                <td>Wii Sports</td>
+                <td>
+                    <a href="https://www.nintendo.com/es-es/">Nintendo EAD</a>
+                </td>
+                <td>19 de noviembre de 2006</td>
+                <td>82,9&nbsp;millones</td>
+                <td>Simulación de deportes usando los mandos de movimiento de Wii.</td>
+            </tr>
+
+            <tr>
+                <td>
+                    <a href="https://es.wikipedia.org/wiki/Red_Dead_Redemption_2">
+                        <img src="img/rdr2.webp" width="100" height="100" alt="rdr2">
+                    </a>
+                </td>
+                <td>Red Dead Redemption 2</td>
+                <td>
+                    <a href="https://www.rockstargames.com/es">Rockstar Studios</a>
+                </td>
+                <td>26 de octubre de 2018</td>
+                <td>79&nbsp;millones</td>
+                <td>Juego de acción y aventura ambientado en el Viejo Oeste.</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="6">
+                    Para ver más juegos pincha 
+                    <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0">aquí</a>
+                </td>
+            </tr>
+        </tfoot>
     </table>
-<footer>Gabriel Gutierrez Castro. All rights reserved©️</footer>
+
+    <footer>Gabriel Gutierrez Castro. All rights reserved ©️</footer>
+
 </body>
 </html>
