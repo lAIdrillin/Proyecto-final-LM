@@ -1,64 +1,65 @@
-<!DOCTYPE html>
-<html lang="es">
+<!DOCTYPE html> <!-- Indica que el documento es HTML5 -->
+<html>
 <head>
-    <meta charset="UTF-8" />
-    <title>🕹️Videojuegos🕹️</title>
+    <meta charset="UTF-8" /> <!-- Permite usar tildes y caracteres especiales -->
+    <title>🕹️Videojuegos🕹️</title> <!-- Título de la pestaña del navegador -->
     <link rel="icon" href="img/forma-alienigena-pixelada-de-un-juego-digital.png" type="image/png">
+    <!-- Favicon (icono pequeño de la pestaña) -->
+
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
 
         /* Header */
         header {
-            font-family: "Jersey 10", sans-serif;
-            text-align: center;
-            font-size: 60px;
-            width: 100vw;
+            font-family: "Jersey 10", sans-serif; /* Fuente del título */
+            text-align: center; /* Centra el texto */
+            font-size: 60px; /* Tamaño del texto */
+            width: 100vw; /* Ocupa el ancho completo */
             margin: 0;
             padding: 0;
-            background: url(img/1.webp);
-            background-size: cover;
-            background-position: center;
-            color: aqua;
+            background: url(img/1.webp); /* Imagen de fondo */
+            background-size: cover; /* Ajusta la imagen al ancho */
+            background-position: center; /* Centra la imagen */
+            color: aqua; /* Color del texto */
         }
 
         /* Body */
         body {
             margin: 0;
             padding: 0;
-            background-color: #2b0057;
-            font-family: Arial, sans-serif;
+            background-color: #2b0057; /* Color de fondo */
+            font-family: Arial, sans-serif; /* Fuente del texto */
         }
 
         /* Menú enlaces */
         .enlaces {
-            font-family: "Jersey 10", sans-serif;
-            text-align: center;
+            font-family: "Jersey 10", sans-serif; /* Fuente del menú */
+            text-align: center; /* Centra los enlaces */
             padding: 20px;
-            font-size: 25px;
-            background-color: black;
+            font-size: 25px; /* Tamaño del texto */
+            background-color: black; /* Fondo negro */
         }
         .enlaces a {
-            color: aqua;
-            margin: 0 15px;
-            text-decoration: none;
-            transition: all 0.3s;
+            color: aqua; /* Color del texto */
+            margin: 0 15px; /* Espaciado entre enlaces */
+            text-decoration: none; /* Quita el subrayado */
+            transition: all 0.3s; /* Animación suave */
         }
         .enlaces a:hover {
-            color: #ff0;
-            transform: scale(1.1);
+            color: #ff0; /* Cambia color al pasar el ratón */
+            transform: scale(1.1); /* Aumenta ligeramente el tamaño */
         }
 
-        /* Títulos */
+        /* Títulos de consolas */
         h2 {
-            font-family: "Jersey 10", sans-serif;
-            text-align: center;
-            font-size: 40px;
-            margin-top: 40px;
+            font-family: "Jersey 10", sans-serif; /* Fuente del título */
+            text-align: center; /* Centra el texto */
+            font-size: 40px; /* Tamaño del texto */
+            margin-top: 40px; /* Espacio superior */
         }
-        h2.nintendo { color: #ff4d4d; }
-        h2.playstation { color: #4d79ff; }
-        h2.xbox { color: #4dff4d; }
-        h2.multimedia { color: aqua; }
+        h2.nintendo { color: #ff4d4d; } /* Color rojo Nintendo */
+        h2.playstation { color: #4d79ff; } /* Color azul PlayStation */
+        h2.xbox { color: #4dff4d; } /* Color verde Xbox */
 
         /* Videos */
         .video, .media {
@@ -86,57 +87,54 @@
 
         /* Footer */
         footer {
-            font-family: "Jersey 10", sans-serif;
+            font-family: "Jersey 10", sans-serif; /* Fuente del pie */
             font-size: 20px;
-            text-align: center;
-            color: aqua;
-            background-color: black;
-            padding: 15px 0;
-            border-top: 2px solid aqua;
+            text-align: center; /* Texto centrado */
+            color: aqua; /* Color del texto */
+            background-color: black; /* Fondo negro */
+            padding: 15px 0; /*espaciado arriba y abajo*/
+            border-top: 2px solid aqua; /* Línea superior */
         }
 
     </style>
 </head>
 <body>
-    <header>Historia de las Consolas</header>
+    <header>Videojuegos</header> <!-- Título superior -->
 
-    <div class="enlaces">
+    <div class="enlaces"> <!-- Menú de navegación -->
         <a href="index.html">Inicio</a>
         <a href="pagina1.html">Ranking</a>
         <a href="pagina2.html">Formulario</a>
         <a href="pagina3.html">Consola</a>
-        <a href="mailto:ejemplo@correo.com">Contacto</a>
+        <a href="mailto:ejemplo@correo.com">Contacto</a> <!-- Enlace a contacto -->
     </div>
 
-    <!-- VIDEOS DE YOUTUBE -->
-    <h2 class="nintendo">Nintendo</h2>
+    <h2 class="nintendo">Nintendo</h2> <!-- Título Nintendo -->
     <div class="video">
         <iframe src="https://www.youtube.com/embed/db4Hjviqktc?si=cIbIwYdKBUIgOc7O"
                 title="Historia de Nintendo" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen>
-        </iframe>
+        </iframe> <!-- Video de YouTube insertado -->
     </div>
 
-    <h2 class="playstation">Playstation</h2>
+    <h2 class="playstation">Playstation</h2> <!-- Título PlayStation -->
     <div class="video">
         <iframe src="https://www.youtube.com/embed/4Chy1qf9nsw?si=bEOSUv60QdHm-4Qk"
                 title="Historia de Playstation" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen>
-        </iframe>
+        </iframe> <!-- Video de YouTube insertado -->
     </div>
 
-    <h2 class="xbox">Microsoft/Xbox</h2>
+    <h2 class="xbox">Microsoft/Xbox</h2> <!-- Título Xbox -->
     <div class="video">
         <iframe src="https://www.youtube.com/embed/W0A1jfg6q3I?si=XmF-S-9mvgmp2AdR"
                 title="Historia de Xbox" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen>
-        </iframe>
+        </iframe> <!-- Video de YouTube insertado -->
     </div>
-
-    <!-- MULTIMEDIA OBLIGATORIO -->
     <h2 class="multimedia">¿Que es un juego?</h2>
 
     <!-- VIDEO HTML5 -->
@@ -147,8 +145,10 @@
         </video>
     </div>
 
+    <footer>Gabriel Gutierrez Castro. All rights reserved©️</footer>
+    <!-- Pie de página -->
 
-    <footer>Gabriel Gutierrez Castro. All rights reserved ©️</footer>
 </body>
 </html>
+
 

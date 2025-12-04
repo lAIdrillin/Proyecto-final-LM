@@ -20,11 +20,13 @@
         background: url(img/1.webp);
         color: aqua;
     }
+    /* Estilos para el encabezado principal */
     body{
         margin: 0;
         padding: 0;
         background-color: #2b0057;
     }
+    /* Estilos generales del cuerpo de la página */
     .enlaces {
         font-family: "Jersey 10", sans-serif;
         text-align: center;
@@ -32,16 +34,19 @@
         font-size: 25px;
         background-color: black;
     }
+    /* Estilos para la barra de enlaces de navegación */
     .enlaces a {
         color: aqua;
         margin: 0 15px;
         text-decoration: none;
         transition: all 0.3s;
     }
+    /* Estilos para los enlaces dentro de la barra de navegación */
     .enlaces a:hover {
         color: #ff0;
         transform: scale(1.1);
     }
+    /* Efecto hover para los enlaces */
     table{
         font-family:"Jersey 10", sans-serif;
         font-size: 22px;
@@ -53,27 +58,32 @@
         box-shadow: 0 0 20px aqua;
         width: 90%;
     }
+    /* Estilos para la tabla principal */
     th, td{
         border: 2px solid aqua;
         padding: 10px;
         color: #00ffff;
     }
+    /* Estilos para las celdas de la tabla */
     th{
         background-color: #330066;
         color: #00ffff;
     }
+    /* Estilos para los encabezados de la tabla */
     caption{
         font-size: 30px;
         padding: 10px;
         color: aqua;
         caption-side: top;
     }
+    /* Estilos para el título de la tabla */
     tfoot td{
         background-color: #330066;
         color: aqua;
         font-size: 22px;
         padding: 15px;
     }
+    /* Estilos para el pie de la tabla */
     footer{
         font-family: "Jersey 10", sans-serif;
         font-size: 20px;
@@ -82,121 +92,124 @@
         background-color: black;
         padding: 15px 0;
     }
+    /* Estilos para el pie de página */
 </style>
 </head>
 <body>
-    <header>videojuegos</header>
+    <header>videojuegos</header> <!-- Encabezado principal de la página -->
 
     <div class="enlaces">
-        <a href="index.html">Inicio</a>
-        <a href="pagina1.html">Ranking</a>
-        <a href="pagina2.html">Formulario</a>
-        <a href="pagina3.html">Consola</a>
-        <a href="mailto:ejemplo@correo.com">Contacto</a>
+        <a href="index.html">Inicio</a> <!-- Enlace a la página de inicio -->
+        <a href="pagina1.html">Ranking</a> <!-- Enlace a la página de ranking -->
+        <a href="pagina2.html">Formulario</a> <!-- Enlace al formulario -->
+        <a href="pagina3.html">Consola</a> <!-- Enlace a la página de consola -->
+        <a href="mailto:ejemplo@correo.com">Contacto</a> <!-- Enlace para contacto por correo -->
     </div>
 
     <table>
-        <caption>Juegos más vendidos de la historia</caption>
+        <caption>Juegos más vendidos de la historia</caption> <!-- Título de la tabla -->
 
         <thead>
-            <tr>
-                <th>Foto</th>
-                <th>Nombre</th>
-                <th>Desarrollador</th>
-                <th>Fecha de salida</th>
-                <th>Ventas</th>
-                <th>Descripción</th>
+            <tr> <!-- Fila de encabezados de la tabla -->
+                <th>Foto</th> <!-- Columna de foto del juego -->
+                <th>Nombre</th> <!-- Columna de nombre del juego -->
+                <th>Desarrollador</th> <!-- Columna de desarrollador -->
+                <th>Fecha de salida</th> <!-- Columna de fecha de salida -->
+                <th>Ventas</th> <!-- Columna de ventas -->
+                <th>Descripción</th> <!-- Columna de descripción -->
             </tr>
         </thead>
 
         <tbody>
-            <tr>
+            <tr> <!-- Fila de datos de Minecraft -->
                 <td>
-                    <a href="https://es.wikipedia.org/wiki/Minecraft">
-                        <img src="img/minecraft.avif" width="100" height="100" alt="minecraft">
+                    <a href="https://es.wikipedia.org/wiki/Minecraft"> <!-- Enlace a Wikipedia de Minecraft -->
+                        <img src="img/minecraft.avif" width="100" height="100" alt="minecraft"> <!-- Imagen de Minecraft -->
                     </a>
                 </td>
-                <td>Minecraft</td>
+                <td>Minecraft</td> <!-- Nombre del juego -->
                 <td>
-                    <a href="https://www.minecraft.net/es-es">Mojang Studios</a>
+                    <a href="https://www.minecraft.net/es-es">Mojang Studios</a> <!-- Enlace al desarrollador -->
                 </td>
-                <td>18 de noviembre de 2011</td>
-                <td>350&nbsp;millones</td>
-                <td>Juego de bloques donde el límite es tu imaginación.</td>
+                <td>18 de noviembre de 2011</td> <!-- Fecha de salida -->
+                <td>350&nbsp;millones</td> <!-- Ventas -->
+                <td>Juego de bloques donde el límite es tu imaginación.</td> <!-- Descripción -->
             </tr>
 
             <tr>
+            <tr> <!-- Fila de datos de GTA V -->
                 <td>
-                    <a href="https://es.wikipedia.org/wiki/Grand_Theft_Auto_V">
-                        <img src="img/GTAV.webp" width="100" height="100" alt="GTAV">
+                    <a href="https://es.wikipedia.org/wiki/Grand_Theft_Auto_V"> <!-- Enlace a Wikipedia de GTA V -->
+                        <img src="img/GTAV.webp" width="100" height="100" alt="GTAV"> <!-- Imagen de GTA V -->
                     </a>
                 </td>
-                <td>Grand Theft Auto V</td>
+                <td>Grand Theft Auto V</td> <!-- Nombre del juego -->
                 <td>
-                    <a href="https://www.rockstarnorth.com">Rockstar North</a>
+                    <a href="https://www.rockstarnorth.com">Rockstar North</a> <!-- Enlace al desarrollador -->
                 </td>
-                <td>17 de septiembre de 2013</td>
-                <td>215&nbsp;millones</td>
-                <td>Juego de mundo abierto con tres protagonistas y cientos de misiones.</td>
+                <td>17 de septiembre de 2013</td> <!-- Fecha de salida -->
+                <td>215&nbsp;millones</td> <!-- Ventas -->
+                <td>Juego de mundo abierto con tres protagonistas y cientos de misiones.</td> <!-- Descripción -->
             </tr>
 
             <tr>
+            <tr> <!-- Fila de datos de Tetris -->
                 <td>
-                    <a href="https://es.wikipedia.org/wiki/Tetris">
-                        <img src="img/tetris.png" width="100" height="100" alt="tetris">
+                    <a href="https://es.wikipedia.org/wiki/Tetris"> <!-- Enlace a Wikipedia de Tetris -->
+                        <img src="img/tetris.png" width="100" height="100" alt="tetris"> <!-- Imagen de Tetris -->
                     </a>
                 </td>
-                <td>Tetris</td>
+                <td>Tetris</td> <!-- Nombre del juego -->
                 <td>
-                    <a href="https://www.ea.com/es-es">EA Mobile</a>
+                    <a href="https://www.ea.com/es-es">EA Mobile</a> <!-- Enlace al desarrollador -->
                 </td>
-                <td>12 de septiembre de 2006</td>
-                <td>132&nbsp;millones</td>
-                <td>Juego de puzles donde debes encajar piezas que caen desde arriba.</td>
+                <td>12 de septiembre de 2006</td> <!-- Fecha de salida -->
+                <td>132&nbsp;millones</td> <!-- Ventas -->
+                <td>Juego de puzles donde debes encajar piezas que caen desde arriba.</td> <!-- Descripción -->
             </tr>
 
             <tr>
+            <tr> <!-- Fila de datos de Wii Sports -->
                 <td>
-                    <a href="https://es.wikipedia.org/wiki/Wii_Sports">
-                        <img src="img/WIIsports.jpg" width="100" height="100" alt="WIIsports">
+                    <a href="https://es.wikipedia.org/wiki/Wii_Sports"> <!-- Enlace a Wikipedia de Wii Sports -->
+                        <img src="img/WIIsports.jpg" width="100" height="100" alt="WIIsports"> <!-- Imagen de Wii Sports -->
                     </a>
                 </td>
-                <td>Wii Sports</td>
+                <td>Wii Sports</td> <!-- Nombre del juego -->
                 <td>
-                    <a href="https://www.nintendo.com/es-es/">Nintendo EAD</a>
+                    <a href="https://www.nintendo.com/es-es/">Nintendo EAD</a> <!-- Enlace al desarrollador -->
                 </td>
-                <td>19 de noviembre de 2006</td>
-                <td>82,9&nbsp;millones</td>
-                <td>Simulación de deportes usando los mandos de movimiento de Wii.</td>
+                <td>19 de noviembre de 2006</td> <!-- Fecha de salida -->
+                <td>82,9&nbsp;millones</td> <!-- Ventas -->
+                <td>Simulación de deportes usando los mandos de movimiento de Wii.</td> <!-- Descripción -->
             </tr>
 
             <tr>
+            <tr> <!-- Fila de datos de Red Dead Redemption 2 -->
                 <td>
-                    <a href="https://es.wikipedia.org/wiki/Red_Dead_Redemption_2">
-                        <img src="img/rdr2.webp" width="100" height="100" alt="rdr2">
+                    <a href="https://es.wikipedia.org/wiki/Red_Dead_Redemption_2"> <!-- Enlace a Wikipedia de RDR2 -->
+                        <img src="img/rdr2.webp" width="100" height="100" alt="rdr2"> <!-- Imagen de RDR2 -->
                     </a>
                 </td>
-                <td>Red Dead Redemption 2</td>
+                <td>Red Dead Redemption 2</td> <!-- Nombre del juego -->
                 <td>
-                    <a href="https://www.rockstargames.com/es">Rockstar Studios</a>
+                    <a href="https://www.rockstargames.com/es">Rockstar Studios</a> <!-- Enlace al desarrollador -->
                 </td>
-                <td>26 de octubre de 2018</td>
-                <td>79&nbsp;millones</td>
-                <td>Juego de acción y aventura ambientado en el Viejo Oeste.</td>
+                <td>26 de octubre de 2018</td> <!-- Fecha de salida -->
+                <td>79&nbsp;millones</td> <!-- Ventas -->
+                <td>Juego de acción y aventura ambientado en el Viejo Oeste.</td> <!-- Descripción -->
             </tr>
         </tbody>
 
         <tfoot>
-            <tr>
-                <td colspan="6">
-                    Para ver más juegos pincha
-                    <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0">aquí</a>
+            <tr> <!-- Fila del pie de la tabla -->
+                <td colspan="6"> <!-- Celda que abarca todas las columnas -->
+                    Para ver más juegos pincha <!-- Texto informativo -->
+                    <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0">aquí</a> <!-- Enlace a YouTube -->
                 </td>
             </tr>
         </tfoot>
     </table>
-
-    <footer>Gabriel Gutierrez Castro. All rights reserved ©️</footer>
-
-</body>
-</html>
+    <footer>Gabriel Gutierrez Castro. All rights reserved ©️</footer> <!-- Pie de página -->
+</body> <!-- Fin del cuerpo de la página -->
+</html> <!-- Fin del documento HTML -->

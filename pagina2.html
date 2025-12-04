@@ -1,292 +1,292 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8" />
-    <title>🕹️Videojuegos🕹️</title>
-    <link rel="icon" href="img/forma-alienigena-pixelada-de-un-juego-digital.png" type="img/html">
+<!DOCTYPE html> <!-- Define el tipo de documento HTML -->
+<html lang="es"> <!-- Indica el idioma de la página -->
+<head> <!-- Inicio de la cabecera -->
+    <meta charset="UTF-8" /> <!-- Codificación de caracteres -->
+    <title>🕹️Videojuegos🕹️</title> <!-- Título de la pestaña -->
+    <link rel="icon" href="img/forma-alienigena-pixelada-de-un-juego-digital.png" type="img/html"> <!-- Icono de la pestaña -->
     <style>
-@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap'); /* Importa fuente Jersey 10 */
 
 /* ====== General ====== */
 body {
-    margin: 0;
-    padding: 0;
-    background-color: #2b0057;
-    font-family: Arial, sans-serif;
-    color: aqua;
+    margin: 0; /* Elimina margen por defecto */
+    padding: 0; /* Elimina padding por defecto */
+    background-color: #2b0057; /* Color de fondo */
+    font-family: Arial, sans-serif; /* Fuente principal */
+    color: aqua; /* Color de texto */
 }
 
 /* ====== Header ====== */
 header {
-    font-family: "Jersey 10", sans-serif;
-    text-align: center;
-    font-size: 60px;
-    width: 100%;
-    padding: 20px 0;
-    background: url(img/1.webp) center/cover no-repeat;
-    color: aqua;
+    font-family: "Jersey 10", sans-serif; /* Fuente Jersey para el header */
+    text-align: center; /* Centra el texto */
+    font-size: 60px; /* Tamaño grande */
+    width: 100%; /* Ocupa todo el ancho */
+    padding: 20px 0; /* Espaciado vertical */
+    background: url(img/1.webp) center/cover no-repeat; /* Imagen de fondo */
+    color: aqua; /* Color del texto */
 }
 
 /* ====== Navegación ====== */
 .enlaces {
-    font-family: "Jersey 10", sans-serif;
-    text-align: center;
-    padding: 20px;
-    font-size: 25px;
-    background-color: black;
+    font-family: "Jersey 10", sans-serif; /* Fuente Jersey para enlaces */
+    text-align: center; /* Centra los enlaces */
+    padding: 20px; /* Espaciado */
+    font-size: 25px; /* Tamaño de fuente */
+    background-color: black; /* Fondo negro */
 }
 .enlaces a {
-    color: aqua;
-    margin: 0 15px;
-    text-decoration: none;
-    transition: all 0.3s;
+    color: aqua; /* Color de los enlaces */
+    margin: 0 15px; /* Espaciado entre enlaces */
+    text-decoration: none; /* Sin subrayado */
+    transition: all 0.3s; /* Transición suave */
 }
 .enlaces a:hover {
-    color: #ff0;
-    transform: scale(1.1);
+    color: #ff0; /* Color al pasar el mouse */
+    transform: scale(1.1); /* Efecto de escala */
 }
 
 /* ====== Formulario ====== */
 form {
-    width: 90%;
-    max-width: 700px;
-    margin: 30px auto;
-    padding: 20px;
-    background-color: #3b0a6f;
-    border-radius: 20px;
-    box-shadow: 0 0 20px #00ffff;
-    display: grid;
-    gap: 15px;
+    width: 90%; /* Ancho del formulario */
+    max-width: 700px; /* Máximo ancho */
+    margin: 30px auto; /* Centrado y margen superior */
+    padding: 20px; /* Espaciado interno */
+    background-color: #3b0a6f; /* Fondo del formulario */
+    border-radius: 20px; /* Bordes redondeados */
+    box-shadow: 0 0 20px #00ffff; /* Sombra */
+    display: grid; /* Usa grid para organizar */
+    gap: 15px; /* Espacio entre elementos */
 }
 
 form .form-group {
-    display: flex;
-    flex-direction: column;
+    display: flex; /* Agrupa elementos en columna */
+    flex-direction: column; /* Dirección vertical */
 }
 
 form label {
-    font-family: "Jersey 10", sans-serif;
-    font-size: 22px;
-    margin-bottom: 5px;
+    font-family: "Jersey 10", sans-serif; /* Fuente Jersey para etiquetas */
+    font-size: 22px; /* Tamaño de etiqueta */
+    margin-bottom: 5px; /* Espacio inferior */
 }
 
 form input,
 form select,
 form textarea {
-    padding: 10px;
-    border-radius: 10px;
-    border: 2px solid aqua;
-    background-color: #1a0033;
-    color: aqua;
-    font-size: 18px;
-    font-family: Arial, sans-serif;
-    width: 100%;
+    padding: 10px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    border: 2px solid aqua; /* Borde color aqua */
+    background-color: #1a0033; /* Fondo de los campos */
+    color: aqua; /* Color de texto */
+    font-size: 18px; /* Tamaño de texto */
+    font-family: Arial, sans-serif; /* Fuente de los campos */
+    width: 100%; /* Ocupa todo el ancho */
 }
 
 /* ====== Botón ====== */
 button {
-    font-family: "Jersey 10", sans-serif;
-    font-size: 25px;
-    color: #1a0033;
-    background-color: aqua;
-    padding: 10px 30px;
-    border-radius: 15px;
-    border: 2px solid aqua;
-    cursor: pointer;
-    justify-self: center;
-    transition: all 0.3s ease;
+    font-family: "Jersey 10", sans-serif; /* Fuente Jersey para botón */
+    font-size: 25px; /* Tamaño de botón */
+    color: #1a0033; /* Color de texto */
+    background-color: aqua; /* Fondo aqua */
+    padding: 10px 30px; /* Espaciado interno */
+    border-radius: 15px; /* Bordes redondeados */
+    border: 2px solid aqua; /* Borde aqua */
+    cursor: pointer; /* Cursor de mano */
+    justify-self: center; /* Centrado en grid */
+    transition: all 0.3s ease; /* Transición suave */
 }
 
 button:hover {
-    background-color: #00ffff;
-    color: #2b0057;
-    transform: scale(1.05);
+    background-color: #00ffff; /* Fondo al pasar el mouse */
+    color: #2b0057; /* Color de texto al pasar el mouse */
+    transform: scale(1.05); /* Efecto de escala */
 }
 
 /* ====== Footer ====== */
 footer {
-    font-family: "Jersey 10", sans-serif;
-    font-size: 20px;
-    text-align: center;
-    color: aqua;
-    background-color: black;
-    padding: 15px 0;
+    font-family: "Jersey 10", sans-serif; /* Fuente Jersey para footer */
+    font-size: 20px; /* Tamaño de texto */
+    text-align: center; /* Centrado */
+    color: aqua; /* Color de texto */
+    background-color: black; /* Fondo negro */
+    padding: 15px 0; /* Espaciado vertical */
 }
 </style>
-</head>
+</style> <!-- Fin de los estilos CSS -->
+</head> <!-- Fin de la cabecera -->
 <body>
-    <header>Formulario Gamer</header>
+    <header>Formulario Gamer</header> <!-- Encabezado principal -->
 
     <div class="enlaces">
-        <a href="index.html">Inicio</a>
-        <a href="pagina1.html">Ranking</a>
-        <a href="pagina2.html">Formulario</a>
-        <a href="pagina3.html">Consola</a>
-        <a href="mailto:ejemplo@correo.com">Contacto</a>
+        <a href="index.html">Inicio</a> <!-- Enlace a inicio -->
+        <a href="pagina1.html">Ranking</a> <!-- Enlace a ranking -->
+        <a href="pagina2.html">Formulario</a> <!-- Enlace a formulario -->
+        <a href="pagina3.html">Consola</a> <!-- Enlace a consola -->
+        <a href="mailto:ejemplo@correo.com">Contacto</a> <!-- Enlace a contacto -->
     </div>
 
     <form action="#">
 
-    <!-- Nombre, Apellidos y Edad -->
+    <!-- Nombre, Apellidos y Edad --> <!-- Agrupación de datos personales -->
     <div class="form-group">
-        <label>Nombre:</label>
-        <input type="text" name="nombre" placeholder="Tu nombre" required>
+        <label>Nombre:</label> <!-- Etiqueta para nombre -->
+        <input type="text" name="nombre" placeholder="Tu nombre" required> <!-- Campo de nombre -->
     </div>
 
     <div class="form-group">
-        <label>Apellidos:</label>
-        <input type="text" name="apellidos" placeholder="Tus apellidos" required>
+        <label>Apellidos:</label> <!-- Etiqueta para apellidos -->
+        <input type="text" name="apellidos" placeholder="Tus apellidos" required> <!-- Campo de apellidos -->
     </div>
 
     <div class="form-group">
-        <label>Edad:</label>
-        <input type="number" name="edad" min="0" max="99" required>
+        <label>Edad:</label> <!-- Etiqueta para edad -->
+        <input type="number" name="edad" min="0" max="99" required> <!-- Campo de edad -->
     </div>
 
     <!-- Password obligatorio -->
     <div class="form-group">
-        <label>Contraseña (para registrar encuesta):</label>
-        <input type="password" name="password" placeholder="Crea una contraseña" required>
+        <label>Contraseña (para registrar encuesta):</label> <!-- Etiqueta para contraseña -->
+        <input type="password" name="password" placeholder="Crea una contraseña" required> <!-- Campo de contraseña -->
     </div>
 
     <!-- Fecha (input date) -->
     <div class="form-group">
-        <label>¿En qué fecha rellenaste este formulario?</label>
-        <input type="date" name="fecha" required>
+        <label>¿En qué fecha rellenaste este formulario?</label> <!-- Etiqueta para fecha -->
+        <input type="date" name="fecha" required> <!-- Campo de fecha -->
     </div>
 
     <!-- Género -->
     <div class="form-group">
-        <label>Género:</label>
-        <input type="radio" name="genero" value="hombre"> Hombre
-        <input type="radio" name="genero" value="mujer"> Mujer
-        <input type="radio" name="genero" value="prefiero no decirlo"> Prefiero no decirlo
+        <label>Género:</label> <!-- Etiqueta para género -->
+        <input type="radio" name="genero" value="hombre"> Hombre <!-- Opción hombre -->
+        <input type="radio" name="genero" value="mujer"> Mujer <!-- Opción mujer -->
+        <input type="radio" name="genero" value="prefiero no decirlo"> Prefiero no decirlo <!-- Opción prefiero no decirlo -->
     </div>
 
     <!-- Checkbox obligatorio -->
     <div class="form-group">
-        <label>¿Qué géneros sueles jugar? (Puedes elegir varios)</label>
-        <input type="checkbox" name="checkbox_accion"> Acción
-        <input type="checkbox" name="checkbox_aventura"> Aventura
-        <input type="checkbox" name="checkbox_rpg"> RPG
-        <input type="checkbox" name="checkbox_deportes"> Deportes
+        <label>¿Qué géneros sueles jugar? (Puedes elegir varios)</label> <!-- Etiqueta para géneros de juego -->
+        <input type="checkbox" name="checkbox_accion"> Acción <!-- Checkbox acción -->
+        <input type="checkbox" name="checkbox_aventura"> Aventura <!-- Checkbox aventura -->
+        <input type="checkbox" name="checkbox_rpg"> RPG <!-- Checkbox RPG -->
+        <input type="checkbox" name="checkbox_deportes"> Deportes <!-- Checkbox deportes -->
     </div>
 
     <!-- Apodo y Plataforma -->
     <div class="form-group">
-        <label>Apodo gamer:</label>
-        <input type="text" name="apodo" placeholder="Tu nombre en los juegos" required>
+        <label>Apodo gamer:</label> <!-- Etiqueta para apodo -->
+        <input type="text" name="apodo" placeholder="Tu nombre en los juegos" required> <!-- Campo de apodo -->
     </div>
 
     <div class="form-group">
-        <label>¿En qué plataforma juegas?</label>
-        <select name="plataforma" required>
-            <option selected disabled value="">Selecciona</option>
-            <option value="Play">Playstation</option>
-            <option value="Xbox">Xbox</option>
-            <option value="Nintendo">Nintendo Switch</option>
-            <option value="PC">PC</option>
-            <option value="otro">Otro</option>
+        <label>¿En qué plataforma juegas?</label> <!-- Etiqueta para plataforma -->
+        <select name="plataforma" required> <!-- Selector de plataforma -->
+            <option selected disabled value="">Selecciona</option> <!-- Opción por defecto -->
+            <option value="Play">Playstation</option> <!-- Opción Playstation -->
+            <option value="Xbox">Xbox</option> <!-- Opción Xbox -->
+            <option value="Nintendo">Nintendo Switch</option> <!-- Opción Nintendo -->
+            <option value="PC">PC</option> <!-- Opción PC -->
+            <option value="otro">Otro</option> <!-- Opción otro -->
         </select>
     </div>
 
     <!-- Horas y Preferencia -->
     <div class="form-group">
-        <label>¿Cuántas horas juegas?</label>
-        <input type="number" name="horas" min="0" max="168" required>
+        <label>¿Cuántas horas juegas?</label> <!-- Etiqueta para horas de juego -->
+        <input type="number" name="horas" min="0" max="168" required> <!-- Campo de horas -->
     </div>
 
     <div class="form-group">
-        <label>¿Cómo prefieres jugar?</label>
-        <select name="prefiere_jugar" required>
-            <option selected disabled value="">Selecciona</option>
-            <option value="amigos">Con amigos</option>
-            <option value="solo">Solo</option>
+        <label>¿Cómo prefieres jugar?</label> <!-- Etiqueta para preferencia de juego -->
+        <select name="prefiere_jugar" required> <!-- Selector de preferencia -->
+            <option selected disabled value="">Selecciona</option> <!-- Opción por defecto -->
+            <option value="amigos">Con amigos</option> <!-- Opción amigos -->
+            <option value="solo">Solo</option> <!-- Opción solo -->
         </select>
     </div>
 
     <!-- Personaje y gráficos -->
     <div class="form-group">
-        <label>¿Qué personaje te gustaría ser?</label>
-        <input type="text" name="personaje">
+        <label>¿Qué personaje te gustaría ser?</label> <!-- Etiqueta para personaje -->
+        <input type="text" name="personaje"> <!-- Campo de personaje -->
     </div>
 
     <div class="form-group">
-        <label>¿Qué gráficos prefieres?</label>
-        <select name="graficos" required>
-            <option selected disabled value="">Selecciona</option>
-            <option value="Realistas">Realistas</option>
-            <option value="PixelArt">PixelArt</option>
+        <label>¿Qué gráficos prefieres?</label> <!-- Etiqueta para gráficos -->
+        <select name="graficos" required> <!-- Selector de gráficos -->
+            <option selected disabled value="">Selecciona</option> <!-- Opción por defecto -->
+            <option value="Realistas">Realistas</option> <!-- Opción realistas -->
+            <option value="PixelArt">PixelArt</option> <!-- Opción pixel art -->
         </select>
     </div>
 
     <div class="form-group">
-        <label>Nivel de juego:</label>
-        <select name="nivel" required>
-            <option selected disabled value="">Selecciona</option>
-            <option value="Principiante">Principiante</option>
-            <option value="Intermedio">Intermedio</option>
-            <option value="Experto">Experto</option>
-            <option value="Leyenda">Leyenda</option>
+        <label>Nivel de juego:</label> <!-- Etiqueta para nivel -->
+        <select name="nivel" required> <!-- Selector de nivel -->
+            <option selected disabled value="">Selecciona</option> <!-- Opción por defecto -->
+            <option value="Principiante">Principiante</option> <!-- Opción principiante -->
+            <option value="Intermedio">Intermedio</option> <!-- Opción intermedio -->
+            <option value="Experto">Experto</option> <!-- Opción experto -->
+            <option value="Leyenda">Leyenda</option> <!-- Opción leyenda -->
         </select>
     </div>
 
     <!-- Top 3 -->
     <div class="form-group">
-        <label>Top 3 juegos favoritos:</label>
-        <input type="text" name="top1" placeholder="Juego 1" required>
-        <input type="text" name="top2" placeholder="Juego 2" required>
-        <input type="text" name="top3" placeholder="Juego 3" required>
+        <label>Top 3 juegos favoritos:</label> <!-- Etiqueta para top 3 -->
+        <input type="text" name="top1" placeholder="Juego 1" required> <!-- Campo juego 1 -->
+        <input type="text" name="top2" placeholder="Juego 2" required> <!-- Campo juego 2 -->
+        <input type="text" name="top3" placeholder="Juego 3" required> <!-- Campo juego 3 -->
     </div>
 
     <!-- Plataforma secundaria -->
     <div class="form-group">
-        <label>Plataforma secundaria:</label>
-        <select name="plataforma2">
-            <option selected disabled value="">Selecciona</option>
-            <option value="Play">Playstation</option>
-            <option value="Xbox">Xbox</option>
-            <option value="Nintendo">Nintendo Switch</option>
-            <option value="PC">PC</option>
-            <option value="otro">Otro</option>
+        <label>Plataforma secundaria:</label> <!-- Etiqueta para plataforma secundaria -->
+        <select name="plataforma2"> <!-- Selector de plataforma secundaria -->
+            <option selected disabled value="">Selecciona</option> <!-- Opción por defecto -->
+            <option value="Play">Playstation</option> <!-- Opción Playstation -->
+            <option value="Xbox">Xbox</option> <!-- Opción Xbox -->
+            <option value="Nintendo">Nintendo Switch</option> <!-- Opción Nintendo -->
+            <option value="PC">PC</option> <!-- Opción PC -->
+            <option value="otro">Otro</option> <!-- Opción otro -->
         </select>
     </div>
 
     <!-- Personaje -->
     <div class="form-group">
-        <label>Personaje favorito:</label>
-        <input type="text" name="personajeFav">
+        <label>Personaje favorito:</label> <!-- Etiqueta para personaje favorito -->
+        <input type="text" name="personajeFav"> <!-- Campo personaje favorito -->
     </div>
 
     <!-- Habilidad y Boss -->
     <div class="form-group">
-        <label>Habilidad especial favorita:</label>
-        <input type="text" name="habilidad">
+        <label>Habilidad especial favorita:</label> <!-- Etiqueta para habilidad -->
+        <input type="text" name="habilidad"> <!-- Campo habilidad -->
     </div>
 
     <div class="form-group">
-        <label>Final boss que más te costó vencer:</label>
-        <input type="text" name="boss">
+        <label>Final boss que más te costó vencer:</label> <!-- Etiqueta para boss -->
+        <input type="text" name="boss"> <!-- Campo boss -->
     </div>
 
     <!-- Preferencias -->
     <div class="form-group">
-        <label>Prefieres:</label>
-        <input type="radio" name="prefiere" value="multijugador"> Multijugador
-        <input type="radio" name="prefiere" value="historia"> Historia
+        <label>Prefieres:</label> <!-- Etiqueta para preferencia -->
+        <input type="radio" name="prefiere" value="multijugador"> Multijugador <!-- Opción multijugador -->
+        <input type="radio" name="prefiere" value="historia"> Historia <!-- Opción historia -->
     </div>
 
     <!-- Comentarios -->
     <div class="form-group">
-        <label>Comentarios / sugerencias:</label>
-        <textarea name="comentarios" rows="3" placeholder="Escribe aquí"></textarea>
+        <label>Comentarios / sugerencias:</label> <!-- Etiqueta para comentarios -->
+        <textarea name="comentarios" rows="3" placeholder="Escribe aquí"></textarea> <!-- Campo de comentarios -->
     </div>
 
     <!-- Botón enviar -->
-    <button type="submit">Enviar</button>
-    <button type="reset">Reiniciar</button>
+    <button type="submit">Enviar</button> <!-- Botón para enviar -->
+    <button type="reset">Reiniciar</button> <!-- Botón para reiniciar -->
 </form>
-
-<footer>Gabriel Gutierrez Castro. All rights reserved ©️</footer>
-</body>
-</html>
+<footer>Gabriel Gutierrez Castro. All rights reserved ©️</footer> <!-- Pie de página -->
+</body> <!-- Fin del cuerpo -->
+</html> <!-- Fin del documento -->
